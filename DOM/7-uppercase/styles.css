@@ -1,0 +1,22 @@
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px 200px 100px;
+}
+
+
+input {
+  width: 300px;
+}
+
+button {
+  background-color: pink;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#upper {
+  cursor: not-allowed;
+}

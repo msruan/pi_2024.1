@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="./../styles.css" type="text/css" rel="stylesheet" />
+    <link href="./styles.css" type="text/css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js"></script>
+    <title>Difference</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Diferença entre innerHtml e textContent</h1>
+      <article>
+        <h3>innerHtml</h3>
+        <p>
+          innerHtml é uma propriedade de Element que permite ler e modificar
+          diretamente o conteúdo HTML de uma tag, ou seja, seus nós descendentes
+          (incluindo texto)
+        </p>
+        <h3>textContent</h3>
+        <p>
+          Element.textContent permite a alteração e leitura do nó de texto de um
+          elemento.
+        </p>
+        <h3>Diferenças práticas</h3>
+        <p>
+          Quando se trata de alterar o conteúdo de texto de um elemento, as duas
+          propriedades têm efeitos idênticos.<br />No entanto, por seus valores
+          não serem analisados como HTML, textContent possui perfomance melhor.
+          <br />Ademais, ao utilizar innerHTML, deve-se levar em consideração o
+          risco de
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting"
+            >ataques XSS</a
+          >.
+        </p>
+        <h4>Exemplo</h4>
+        <p id="introduce">
+          O mesmo texto inserido via Javascript utilizando textContent e
+          innerHTML em dois parágrafos.
+        </p>
+        <div id="samples">
+          <p id="innerHTML" class="sample">
+            <span>innerHTML: </span>
+          </p>
+          <p id="textContent" class="sample">
+            <span>textContent: </span>
+          </p>
+        </div>
+      </article>
+      <footer>
+        <a href="./../index.html">Voltar</a>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+p {
+  margin-bottom: 30px;
+}
+
+article {
+  padding: 0px 80px 0px 80px;
+}
+#introduce {
+  font-size: medium;
+}
+#samples {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+}
+h3,
+h4 {
+  color: var(--tertiary);
+  font-weight: bold;
+}
+.sample {
+  font-size: medium;
+  color: burlywood;
+}
+a {
+  color: var(--french-violet);
+}
+a:visited {
+  color: var(--heliotrope);
+}
