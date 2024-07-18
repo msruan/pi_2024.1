@@ -1,21 +1,22 @@
+"use strict";
 document.addEventListener("DOMContentLoaded", main);
 function main() {
-    var content = document.getElementById("content");
-    for (var i = 0; i < 5; i++) {
+    const content = document.getElementById("content");
+    for (let i = 0; i < 5; i++) {
         content.innerHTML +=
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa temporibus laudantium vero minima cum nostrum sequi eum minus dolores voluptatibus obcaecati atque numquam officia, quidem ad delectus, aperiam magni error.<br>";
     }
     fontSizeChanger();
 }
 function fontSizeChanger() {
-    var plus = document.getElementById("plus");
-    var less = document.getElementById("less");
-    var fonts = ["8px", "12px", "16px", "20px", "24px"];
+    const plus = document.getElementById("plus");
+    const less = document.getElementById("less");
+    const fonts = ["8px", "12px", "16px", "20px", "24px"];
     plus === null || plus === void 0 ? void 0 : plus.addEventListener("click", function () {
-        var content = document.getElementById("content");
-        var fontSize = content === null || content === void 0 ? void 0 : content.style.fontSize;
+        const content = document.getElementById("content");
+        const fontSize = content === null || content === void 0 ? void 0 : content.style.fontSize;
         console.log(fontSize);
-        var index = fonts.findIndex(function (size) { return fontSize === size; });
+        const index = fonts.findIndex((size) => fontSize === size);
         if (!fontSize) {
             content.style.fontSize = "20px";
         }
@@ -32,10 +33,10 @@ function fontSizeChanger() {
         }
     });
     less === null || less === void 0 ? void 0 : less.addEventListener("click", function () {
-        var content = document.getElementById("content");
-        var fontSize = content === null || content === void 0 ? void 0 : content.style.fontSize;
+        const content = document.getElementById("content");
+        const fontSize = content === null || content === void 0 ? void 0 : content.style.fontSize;
         console.log(fontSize);
-        var index = fonts.findIndex(function (size) { return fontSize === size; });
+        const index = fonts.findIndex((size) => fontSize === size);
         if (!fontSize) {
             content.style.fontSize = "12px";
         }
