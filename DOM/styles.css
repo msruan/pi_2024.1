@@ -48,6 +48,7 @@ button {
   gap: 7px;
 }
 p,
+li,
 label {
   line-height: 1.5rem;
   font-size: larger;
