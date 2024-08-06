@@ -1,0 +1,26 @@
+.oculto {
+  display: none;
+}
+
+.container {
+  justify-content: center;
+  gap: 35px;
+}
+
+.mensagemErro {
+  position: absolute;
+  color: red;
+  margin-top: 10px;
+  top: 50%;
+  left: 50%;
+  background-color: beige;
+  border-radius: 5px;
+  padding: 12px;
+}
+.output {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
