@@ -1,0 +1,57 @@
+body {
+  overflow: hidden;
+
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: calc(100% - 22px);
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#selecto {
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+select {
+  width: 300px;
+}
+
+#input {
+  width: 75%;
+}
+
+#put {
+  display: flex;
+  justify-content: space-between;
+  padding: 15%;
+}
+
+.container {
+  height: 90%;
+}
