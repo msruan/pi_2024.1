@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APIs</title>
+    <script src="./build/qr-code.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>APIs</h1>
+      <section id="qr-section">
+        <h2>Gerador de QR Code</h2>
+        <main>
+          <div id="qr-put">
+            <div class="field">
+              <label for="qr-input">Digite o conteúdo</label>
+              <input id="qr-input" />
+            </div>
+            <button id="qr-btn">Enviar</button>
+          </div>
+
+          <figure id="qr-result">
+            <img id="qr-code" src="./assets/transparent.png" />
+            <figcaption id="qr-caption"></figcaption>
+          </figure>
+        </main>
+      </section>
+    </div>
+  </body>
+</html>
